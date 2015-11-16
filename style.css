@@ -1,0 +1,62 @@
+body {
+	background-color: #e5ffff;
+}
+form {
+	background-color: #99b3ff;
+	float: left;
+	padding: 10px 30px 10px 30px;
+	border: 3px outset #e6e6e6;
+	height: 100%;
+	border-radius: 10px;
+}
+h1 {
+	text-align: center;
+	border-bottom: 8px ridge #e6e6e6;
+}
+li {
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+}
+input {
+	border: 1px inset #b3b3b3;
+}
+div {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 5px auto 0px 365px;
+	border-bottom: 4px groove #e6e6e6;
+}
+footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+p {
+	margin: 5px auto;
+}
+.one {
+	background-color: #ff6666;
+}
+.two {
+	background-color: #ffa31a;
+}
+.three {
+	background-color: yellow;
+}
+.four {
+	background-color: #00ff00;
+}
+.five {
+	background-color: #809fff;
+}
+.remove {
+	margin: 5px 20px 5px 20px;
+}
+.empList {
+	float: left;
+	padding: 10px 30px 10px 30px;
+}
+.side {
+	font-size: 16px;
+	width: 150px;
+}
