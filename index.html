@@ -3,31 +3,45 @@
 	<head>
 		<title>prime_solo_jq_01</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="handlebars-v4.0.4.js"></script>
 	</head>
 	<body>
 		<h1>Employee Information</h1>
-		<form>
+		<form id='empInfo'>
 			<h3>First Name
-			<input type="text" name="firstName" autofocus></input></h3>
+			<input id='firstName'type="text" name="firstName" autofocus></input></h3>
 			<h3>Last Name
-			<input type="text" name="lastName"></input></h3>
+			<input id='lastName' type="text" name="lastName"></input></h3>
 			<h3>Employee Number
-			<input type="number" name="empNum"></input></h3>
+			<input id='num' type="number" name="num"></input></h3>
 			<h3>Title
-			<input type="text" name="title"></input></h3>
+			<input id='title' type="text" name="title"></input></h3>
 			<h3>Review Score
-			<input type="number" max='5' min='1' name="reviewScore"></input></h3>
+			<input id='reviewScore' type="number" max='5' min='1' name="reviewScore"></input></h3>
 			<h3>Salary
-			<input type="number" name="salary"></input></h3>
+			<input id='salary' type="number" name="salary"></input></h3>
 			<input type="submit" name="submit" value="Submit"></input>
 		</form>
-		<div>Employee List</div>
-		<ul class="empList">
-		</ul>
+		<h2>Employee List</h2>
+			<script id='employee-list' type="text/x-handlebars-template">
+				{{#each list}}
+				<tr data-num={{num}}>
+					<td>{{num}}</td>
+					<td>{{firstName}}</td>
+					<td>{{lastName}}</td>
+					<td>{{title}}</td>
+					<td>{{salary}}</td>
+					<td>{{reviewScore}}</td>
+					<td><button class='remove'>Remove</button></td>
+				</tr>
+				{{/each}}
+			</script>
+		<table class='employees'>
+		</table>
 		<footer>
 			Design: James Kirwin Copyright 2015
 		</footer>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
